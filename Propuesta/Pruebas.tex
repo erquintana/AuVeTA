@@ -1,0 +1,41 @@
+\section{Pruebas y validación de programa}
+
+Es importante recalcar que las pruebas son parte fundamental durante el desarrollo y para el éxito de cualquier proyecto, puesto que en esta etapa es donde se puede determinar de manera crítica el funcionamiento de cada uno de los subsistemas que conforman cualquier proyecto. Además, la etapa de pruebas en muchas ocasiones revela posibles puntos de optimización tanto a nivel de software como hardware y en general permite descubrir inconvenientes que puedan existir en la integración e interacciones de dichos subsistemas. 
+Este proyecto consta de dos partes estrechamente relacionadas, puesto que el resultado final dependerá tanto del hardware como el software. Cabe resaltar que dentro de las pruebas dividiremos las mismas en:
+
+\begin{itemize}
+    \item Pruebas de software.
+    \item Pruebas de hardware.
+    \item Pruebas de integración.
+    \item Pruebas de campo.
+\end{itemize}
+
+\subsection{Pruebas de Software}
+\begin{itemize}
+    \item Revisión de interfaz y posible manejo de errores de comunicación u ocasionados por el usuario.
+    \item Asignación correcta de pines en el código de acuerdo al tipo de entrada o salida. 
+    \item Verificación de correcta implementación de las bibliotecas en los códigos.
+    \item Revisión de cantidad de memoria utilizada por la interfaz y en el arduino.
+\end{itemize}
+
+\subsection{Pruebas de Hardware}
+\begin{itemize}
+    \item Chequeo de continuidad en cables y conexiones.
+    \item Verificación de sujeción de componentes en su lugar.
+    \item Prueba de cada módulo individualmente para verificar su correcto funcionamiento. 
+\end{itemize}
+
+\subsection{Pruebas de integración}
+\begin{itemize}
+    \item Pruebas con todos los módulos y sensores integrados.
+    \item Conexión correcta de pines al Arduino en relación al código.
+    \item Cálculo de tiempo de autonomía de fuente de poder con todos los subsistemas en funcionamiento.
+\end{itemize}
+
+\subsection{Pruebas de campo}
+\begin{itemize}
+    \item Control de potencia de las ruedas dependiendo de donde se implemente el vehículo para evitar deslizamiento.
+    \item Pruebas de rango de acción de sensores de acuerdo a las condiciones de luz del entorno donde se implemente el vehículo.
+\end{itemize}
+
+Todas las pruebas son importantes, pero en el caso de este proyecto se pondrá especial atención a la integración, puesto que la interacción hardware-software puede representar una barrera importante a la hora de implementar los distintos modos de operación del vehículo y su accionar en un entorno físico, por tal motivo, consideramos de esta la prueba más crítica.

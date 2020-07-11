@@ -1,0 +1,126 @@
+\documentclass[12pt]{article}
+%\usepackage{natbib}
+\usepackage[spanish]{babel}
+\usepackage{url}
+\usepackage[utf8]{inputenc} 
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}					% Cambiar nombre a tablas
+\addto\captionsspanish{\renewcommand{\listtablename}{Índice de tablas}}		% Cambiar nombre a lista de tablas
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\usepackage{float}
+\usepackage{verbatim} 
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{biblatex} %Imports biblatex package
+\addbibresource{biblist.bib} %Import the bibliography file
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=black,citecolor=black]{hyperref}     % Para insertar hipervínculos y marcadores
+\bibliography{biblist}  % Biliografía
+
+\setmarginsrb{1.5 cm}{2.5 cm}{1.5 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+
+\title {AuVeTA: Autonomous Vehicle for Tracking Aplications\\[1 cm]}				
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{AuVeTA proyect}
+\rhead{IE-0117}
+\cfoot{\thepage}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{titlepage}
+
+
+\centering
+\includegraphics[width=4 cm]{imagenes/LOGO}\\[1 cm]
+
+	\centering
+    \textsc{\LARGE Universidad de Costa Rica}\\	% University Name
+	\textsc{ \Large{Escuela de Ingeniería Eléctrica} \\  \large{IE-0117 \\ Programación bajo plataformas abiertas}}  \\[0.5 cm]
+	
+	\rule{\linewidth}{0.2 mm} \\[0.4 cm]
+	{ \huge \bfseries \thetitle}
+	\rule{\linewidth}{0.2 mm} \\[1 cm]
+	
+    Grupo de trabajo 0:
+
+		 Rodríguez Quintana Esteban\hspace{1.5 cm} B66076     \\
+		 Jorge Isaac Fallas Mejía\hspace{1.5 cm} B62562 \\
+		 Fabio Villalobos Pacheco   \hspace{1.5 cm} B78346\\[2 cm]
+
+	{ Grupo de clase 3} \\				% Course Code 
+	 \normalsize Profesor: Ricardo Román Brenes\\[1 cm]
+
+	
+		I 2019
+	
+    
+    
+    
+    
+	
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagenumbering{roman}
+
+\tableofcontents
+\pagebreak
+%   \listoffigures
+%   \listoftables
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagenumbering{arabic}
+
+\newpage
+
+
+\begin{comment}
+
+\section{Objetivos}
+\subsection{Objetivo General}
+
+\begin{itemize}
+    \item Diseñar y construir un vehículo seguidor de línea capás de remover obstáculos pequeños.
+\end{itemize}
+
+
+\subsection{Objetivos Específicos}
+\begin{itemize}
+    \item Integrar conocimientos adquiridos en el de Laboratorio Eléctrico I y cursos previos.
+    \item Implementar programación de Arduino para la automatización del vehículo.
+    \item Concluir el recorrido del vehículo con la activación de un circuito de control.
+\end{itemize}
+\end{comment}
+
+\newpage
+
+\input{Resena.tex}
+
+\input{SH.tex}
+
+\input{hardware.tex}
+
+\newpage
+\input{Pruebas.tex}
+
+
+\printbibliography
+
+\end{document}
